@@ -1,0 +1,11 @@
+- name: SL Install
+  hosts: all
+  tasks:
+    - name: epel Install
+      yum:
+        name: http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+        state: present
+    - name: SL Install
+      yum:
+        name: sl
+        state: present
