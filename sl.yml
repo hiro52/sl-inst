@@ -8,4 +8,4 @@
     - name: SL Install
       yum:
         name: sl
-        state: "{{sl_state}}"
+        state: present
